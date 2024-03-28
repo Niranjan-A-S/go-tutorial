@@ -1,8 +1,12 @@
-package  main;
+package main
 
-import "fmt"
-import "rsc.io/quote"
+import (
+	"fmt"
 
-func main () {
-	fmt.Println(quote.Go())
+	"example.com/greetings"
+)
+
+func main() {
+    message := greetings.Hello("Gladys")
+    fmt.Println(message)
 }
